@@ -53,20 +53,11 @@ const Register = () => {
 
   return (
     <div className="container">
-      <h1 className="header_title"> CURD OPERATION IN REACT</h1>
+      <h1 className="header_title">Product Listed Table</h1>
 
       <div className="register_container">
         <div className="register_form">
           <form onSubmit={handleSubmit} action="" className="form_section">
-            <div className="input_area">
-              <label>id</label>
-              <input
-                value={id}
-                onChange={(e) => setId(e.target.value)}
-                type="text"
-                placeholder="id"
-              />
-            </div>
             <div className="input_area">
               <label>Product Name</label>
               <input
@@ -77,11 +68,20 @@ const Register = () => {
               />
             </div>
             <div className="input_area">
+              <label>id</label>
+              <input
+                value={id}
+                onChange={(e) => setId(e.target.value)}
+                type="number"
+                placeholder="id"
+              />
+            </div>
+            <div className="input_area">
               <label>Price</label>
               <input
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
-                type="text"
+                type="number"
                 placeholder="Price"
               />
             </div>
@@ -90,7 +90,7 @@ const Register = () => {
               <input
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
-                type="text"
+                type="number"
                 placeholder="Quantity"
               />
             </div>
@@ -100,7 +100,6 @@ const Register = () => {
                 required
                 value={color}
                 onChange={(e) => setColor(e.target.value)}>
-                {/* <option>select your color</option> */}
                 <option value="Red">Red</option>
                 <option value="Blue">Blue</option>
                 <option value="Green">Green</option>
