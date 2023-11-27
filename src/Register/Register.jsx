@@ -14,7 +14,7 @@ const Register = () => {
   const [id, setId] = useState("");
   const [productName, setProductName] = useState("");
   const [price, setPrice] = useState("");
-  const [quantity, setQuantity] = useState("");
+  const [quantity, setQuantity] = useState("1");
   const [color, setColor] = useState("Red");
   const [dec, setDec] = useState("");
 
