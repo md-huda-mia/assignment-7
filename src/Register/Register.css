@@ -1,0 +1,82 @@
+h1.header_title {
+  text-align: center;
+  padding: 30px 10px;
+}
+.register_form {
+  margin-bottom: 30px;
+}
+.register_container {
+  display: flex;
+  gap: 20px;
+}
+form.form_section {
+  margin: 0 auto;
+  padding: 30px 50px;
+  background: #e4f7ef;
+  border-radius: 10px;
+}
+.input_area {
+  display: flex;
+  gap: 10px;
+  line-height: 25px;
+  margin-bottom: 8px;
+  flex-direction: column;
+}
+.input_area label {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: serif;
+}
+.input_area :where(input, select, textarea) {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #d5ede3;
+}
+button.submit_btn,
+.table_container button {
+  border: none;
+  background: #673ab7;
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 8px;
+}
+
+/* ============================== */
+.table_container {
+  /* max-width: 850px; */
+  margin: 0 auto;
+  padding: 30px 50px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #9e9e9e;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table_container button {
+  position: absolute;
+  bottom: 50px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.table_container {
+  position: relative;
+}
